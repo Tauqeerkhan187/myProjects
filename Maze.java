@@ -82,13 +82,13 @@ public class Maze
                     break;
             
                 default:
-                    System.out.println("MESSAGE 1"); //Invalid direction.
+                    System.out.println("You have no idea where you're going."); //Invalid direction.
             }
 
             if (currentRow < 0 || currentCol < 0 || currentRow >= grid.length || currentCol >= grid[currentRow].length)
             {
                 done = true;
-                System.out.println("MESSAGE 2"); // Out of bounds.
+                System.out.println("You fall into the chasm of Doom."); // Out of bounds.
             }
             else
             {
@@ -99,7 +99,7 @@ public class Maze
                 else if(grid[currentRow][currentCol] == WALL)
                 {
                     done = true;
-                    System.out.println("MESSAGE 3"); // Hit wall.
+                    System.out.println("You stumble blindly into a solid concrete wall."); // Hit wall.
                 }
                 else if(grid[currentRow][currentCol] == END)
                 {
