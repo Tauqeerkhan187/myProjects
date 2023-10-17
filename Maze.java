@@ -105,7 +105,7 @@ public class Maze
                 {
                     done = true;
                     solved = true;
-                    System.out.println("MESSAGE 4"); // Solved.
+                    System.out.println("Congrats ! You solved it dumbass"); // Solved.
                 }
                 else
                 {} // Do nothing.
@@ -117,7 +117,7 @@ public class Maze
 
         if(!solved)
         {
-            System.out.println("MESSAGE 5"); // Did not reach the end.
+            System.out.println("YOU FUCKED UP ! Future dumbasses shall see your remains displayed here."); // Did not reach the end.
         }
     
         for(int i = 0; i < grid.length; i++)
