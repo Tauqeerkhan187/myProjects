@@ -11,15 +11,15 @@ public class GridViewer
  36                     switch(grid[i][j])
  37                     {
  38                         case Maze.EMPTY:
- 39                             System.out.print(" ");
+ 39                             System.out.print("!@ ");
  40                             break;
  41 
  42                         case Maze.WALL:
- 43                             System.out.print("##");
+ 43                             System.out.print("%#");
  44                             break;
  45 
  46                         case Maze.START:
- 47                             System.out.print("^^");
+ 47                             System.out.print("**&");
  48                             break;
  49 
  50                         case Maze.END:
@@ -27,7 +27,7 @@ public class GridViewer
  52                             break;
  53 
  54                         case Maze.VISITED:
- 55                             System.out.print("..");
+ 55                             System.out.print(".D.");
  56                             break;
  57 
  58                         default:
